@@ -1,0 +1,87 @@
+BRAND IDENTITY
+- Name: Washly
+- Tagline: "Fresh clothes, zero effort."
+- Tone: Friendly, energetic, trustworthy, modern
+- Colors: Use a colorful, vibrant palette — primary coral/orange (#FF6B4A), secondary sky blue (#4AB8FF), accent mint green (#3DDBB5), neutral white/light gray backgrounds. Use gradients and bold color blocks liberally.
+- Typography: Rounded, modern sans-serif (e.g. Inter, Nunito, or Poppins). Large headlines, friendly body text.
+- Aesthetic: Clean and airy with pops of color. Think consumer app meets lifestyle brand. Inspired by Washmen, Laundryheap, and Rinse.
+
+---
+
+PAGE STRUCTURE & SECTIONS
+
+1. NAVIGATION BAR
+- Logo ("Washly" in bold rounded font with a small bubble/sparkle icon)
+- Nav links: How It Works, Services, Pricing, About
+- CTA button: "Book a Pickup" (coral/orange, rounded pill shape)
+- Sticky on scroll
+
+2. HERO SECTION
+- Bold headline: "Laundry Day is Cancelled." or "Your Cleanest Clothes Yet."
+- Subheadline: "We pick up, clean, and deliver your laundry — next day."
+- Two CTA buttons: "Book a Pickup" (primary) + "See How It Works" (ghost/outline)
+- Trust badges row below CTAs: ⭐ 4.9 Rating | 🚗 Free Pickup | ⏱ 24hr Turnaround | 🌿 Eco-Friendly
+- Large lifestyle hero image (person happily holding fresh laundry, bright background)
+- Colorful abstract blob shapes or wavy background accents
+
+3. HOW IT WORKS (3 steps)
+- Section title: "As easy as 1, 2, 3"
+- Step 1: "Schedule a Pickup" — choose your time in the app or website
+- Step 2: "We Clean Everything" — professional cleaning at our facility
+- Step 3: "Delivered to Your Door" — fresh, folded, and on time
+- Each step has a large colorful icon, step number, and short description
+- Use a horizontal card layout on desktop, vertical stack on mobile
+
+4. SERVICES SECTION
+- Section title: "Everything You Need, Cleaned"
+- Service cards (rounded cards with icon + name + short description):
+  • Wash & Fold — everyday laundry by the bag
+  • Dry Cleaning — suits, dresses, delicate fabrics
+  • Ironing & Press — crisp and wrinkle-free
+  • Bedding & Linens — sheets, duvets, towels
+- Each card uses a different accent color from the palette
+- "View Full Pricing" link below
+
+5. PRICING SECTION
+- Section title: "Simple, Transparent Pricing"
+- Pricing table or cards with 3 tiers (e.g. Basic Bag, Premium Bag, Dry Cleaning Per Item)
+- Highlight the middle/most popular plan with a colorful background
+- Include a "No hidden fees, ever." reassurance note
+
+6. TESTIMONIALS
+- Section title: "Our Customers Love Us"
+- 3 testimonial cards with: star rating, quote, customer first name + city
+- Soft pastel card backgrounds, large quote marks
+- Optional: Add a Google rating badge (4.9 ★ based on 2,000+ reviews)
+
+7. APP DOWNLOAD CTA (if applicable)
+- Bold color block section (coral or gradient)
+- "Washly is in your pocket" — available on iOS & Android
+- App Store + Google Play buttons
+- Phone mockup showing the app UI
+
+8. FAQ SECTION
+- 5–6 collapsible accordion items:
+  • How quickly do you pick up?
+  • What areas do you serve?
+  • How is my laundry priced?
+  • What if something goes missing?
+  • Do you use eco-friendly products?
+  • Can I set recurring orders?
+
+9. FOOTER
+- Logo + tagline
+- Nav columns: Services | Company | Support
+- Social icons (Instagram, TikTok, Facebook)
+- "© 2025 Washly. All rights reserved." + Privacy Policy + Terms
+
+---
+
+DESIGN REQUIREMENTS
+- Fully responsive (mobile-first)
+- Smooth scroll animations (fade-in on scroll for sections)
+- Rounded corners everywhere (cards, buttons, images — border-radius: 16–24px)
+- Generous whitespace between sections
+- Use colorful SVG illustrations or emoji-style icons (not generic flat icons)
+- Avoid stock-photo clichés — use modern, diverse lifestyle imagery descriptions
+- Micro-interactions: button hover states, card hover lifts (box-shadow), smooth transitions
