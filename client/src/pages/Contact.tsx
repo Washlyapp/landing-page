@@ -19,26 +19,19 @@ export default function Contact() {
     setError(null);
 
     const form = e.currentTarget;
-    const data = {
-      name: (form.elements.namedItem("name") as HTMLInputElement).value,
-      email: (form.elements.namedItem("email") as HTMLInputElement).value,
-      subject: (form.elements.namedItem("subject") as HTMLInputElement).value,
-      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
-    };
+    const formData = new FormData(form);
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("/", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
       });
 
-      if (!res.ok) {
-        const json = await res.json();
-        throw new Error(json.error || "Something went wrong.");
-      }
+      if (!res.ok) throw new Error("Something went wrong. Please try again.");
 
       setSubmitted(true);
+      form.reset();
     } catch (err: any) {
       setError(err.message);
     } finally {
@@ -84,12 +77,20 @@ export default function Contact() {
             </button>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            onSubmit={handleSubmit}
+            className="space-y-6"
+          >
+            <input type="hidden" name="form-name" value="contact" />
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label className="text-sm font-bold" htmlFor="name">{c.name}</label>
                 <input
                   id="name"
+                  name="name"
                   type="text"
                   required
                   placeholder={c.namePlaceholder}
@@ -100,6 +101,7 @@ export default function Contact() {
                 <label className="text-sm font-bold" htmlFor="email">{c.email}</label>
                 <input
                   id="email"
+                  name="email"
                   type="email"
                   required
                   placeholder={c.emailPlaceholder}
@@ -112,6 +114,7 @@ export default function Contact() {
               <label className="text-sm font-bold" htmlFor="subject">{c.subject}</label>
               <input
                 id="subject"
+                name="subject"
                 type="text"
                 required
                 placeholder={c.subjectPlaceholder}
@@ -123,6 +126,7 @@ export default function Contact() {
               <label className="text-sm font-bold" htmlFor="message">{c.message}</label>
               <textarea
                 id="message"
+                name="message"
                 required
                 rows={6}
                 placeholder={c.messagePlaceholder}
